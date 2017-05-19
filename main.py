@@ -27,7 +27,7 @@ def decrypt_file(name, key):
 
 
 def encrypt_file(name, key):
-    if name.split("/")[-1] == "crypt.py":
+    if name.split("/")[-1] == "crypt.py" or "temp" in name:
         return
    
     iv = "OS3cyptoIVsecret"
