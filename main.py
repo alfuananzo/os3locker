@@ -27,6 +27,8 @@ def decrypt_file(name, key):
 
 
 def encrypt_file(name, key):
+    if name.split("/")[-1] == "crypt.py":
+        return
    
     iv = "OS3cyptoIVsecret"
     encryptor = AES.new(key, AES.MODE_CBC, iv)
